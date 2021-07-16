@@ -18,7 +18,6 @@ public class playerScript : MonoBehaviour
     public float jumpTime;
 
 
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -50,7 +49,7 @@ public class playerScript : MonoBehaviour
             }
 
         }
-        transform.Translate(Input.GetAxis("Horizontal") * 15f * Time.deltaTime, 0f, 0f);
+        transform.Translate(Input.GetAxis("Horizontal") * 10f * Time.deltaTime, 0f, 0f);
         Vector3 characterScale = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
         {

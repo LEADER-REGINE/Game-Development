@@ -22,7 +22,7 @@ public class playerAnimScript : MonoBehaviour
         }
 
         if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space)){
-            anim.SetTrigger("isJumpUp");
+            anim.SetTrigger("jump");
         }
     }
 }
